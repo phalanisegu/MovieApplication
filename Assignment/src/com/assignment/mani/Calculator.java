@@ -35,13 +35,7 @@ public class Calculator {
 				// Calculate the taxes
 				double tax = 0;
 
-				if (r.get(i).getItem().getDescription().toLowerCase().contains("imported")) {
-					tax = (r.get(i).getItem().getPrice() * 0.15); // Extra 5% tax on
-					// imported items
-				} else {
-					tax = (r.get(i).getItem().getPrice() * 0.10);
-				}
-
+				
 				// Calculate the total price
 				double totalprice = r.get(i).getItem().getPrice() + (tax);
 				// Print out the item's total price
